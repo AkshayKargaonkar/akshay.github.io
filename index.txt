@@ -2,30 +2,29 @@ Akshay - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Akshay Kargaonkar
+Akshay Kargaonkar
+Robotics Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+ak2603kargaonkar@gmail.com
 
 Phone
-+1 (213) 352-2795
++81-080-2072-6419
 
 Birthday
-June 23, 1982
+March 26, 2000
 
 Location
-Sacramento, California, USA
+Osaka, JAPAN
 
 # navbar
 
 About
 Resume
 Portfolio
-Blog
 Contact
 
 # about
