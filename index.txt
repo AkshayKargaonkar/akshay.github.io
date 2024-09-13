@@ -23,8 +23,9 @@ Osaka, JAPAN
 # navbar
 
 About
-Resume
-Portfolio
+CV
+Transcripts
+Projects
 Contact
 
 # about
