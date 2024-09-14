@@ -337,6 +337,7 @@ main {
   overflow: hidden;
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  margin-bottom: 15px;
 }
 
 .info-content .name {
