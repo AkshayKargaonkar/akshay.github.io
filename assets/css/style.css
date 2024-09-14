@@ -331,7 +331,10 @@ main {
   gap: 15px;
 }
 
+}
 .avatar-box {
+  position: relative;
+  overflow: hidden;
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
 }
