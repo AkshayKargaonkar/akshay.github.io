@@ -527,12 +527,26 @@ main {
 
 .service-title { margin-bottom: 20px; }
 
+/**
 .service-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
+*/
+.service-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px 15px;
+  padding-bottom: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
