@@ -1997,6 +1997,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
+  .navbar {
+        
+   transform: translateX(0px);
+  }
 
 
   /**
