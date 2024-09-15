@@ -344,7 +344,7 @@ main {
   width: 80px;
   height: 100%;
   object-fit: cover; /* Ensures the image covers the box while maintaining aspect ratio */
-  border-radius: 20px; /* Inherit the border-radius from the parent */
+  border-radius: inherit; /* Inherit the border-radius from the parent */
 }
 
 .info-content .name {
@@ -527,29 +527,13 @@ main {
 
 .service-title { margin-bottom: 20px; }
 
-/**
 .service-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
-*/
-.service-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px 15px;
-  padding-bottom: 35px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-}
+
 .service-item {
-  min-width: 100%;
-  scroll-snap-align: center;
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
