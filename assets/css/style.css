@@ -548,6 +548,8 @@ main {
   scroll-snap-type: inline mandatory;
 }
 .service-item {
+  min-width: 100%;
+  scroll-snap-align: center;
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
