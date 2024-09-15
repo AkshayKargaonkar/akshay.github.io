@@ -77,6 +77,7 @@
   --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
+  --fs-0: 0px;
   --fs-1: 24px;
   --fs-2: 18px;
   --fs-3: 17px;
@@ -232,7 +233,7 @@ article.active {
 
 .h3 { font-size: var(--fs-2); }
 
-.h4 { font-size: var(--fs-4); }
+.h4 {font-size: var(--fs-7);}
 
 .h5 {
   font-size: var(--fs-7);
@@ -276,7 +277,7 @@ article.active {
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 15px;
-  padding-top: 45px;
+  padding-top: 15px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   cursor: pointer;
@@ -590,29 +591,29 @@ main {
 }
 
 .testimonials-item {
-  min-width: 100%;
+  min-width: calc(50% - 15px);
   scroll-snap-align: center;
 }
 
 .testimonials-avatar-box {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 10px;
   transform: translate(5px, -50%);
   border-radius: 14px;
-  /*box-shadow: var(--shadow-1);*/
+  /* box-shadow: var(--shadow-1); */
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.testimonials-item-title {margin-bottom: 10px;}
 
 .testimonials-text {
   color: var(--light-gray);
-  font-size: var(--fs-6);
+  font-size: var(--fs-8);
   font-weight: var(--fw-300);
   line-height: 1.6;
   display: -webkit-box;
   line-clamp: 4;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -714,13 +715,13 @@ main {
 
 .modal-img-wrapper > img { display: none; }
 
-.modal-title { margin-bottom: 4px; }
+.modal-title {margin-bottom: 4px;}
 
 .modal-content time {
-  font-size: var(--fs-6);
+  font-size: var(--fs-0);
   color: var(--light-gray-70);
   font-weight: var(--fw-300);
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .modal-content p {
@@ -1240,25 +1241,57 @@ textarea.form-input::-webkit-resizer { display: none; }
 \*-----------------------------------*/
 
 /**
- * responsive larger than 450px screen
+ * responsive larger than 375px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 375px) {
+  
+    .avatar-box {
+        border-radius: 18px;
+    }
 
+  
   /**
    * client
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
+  
+  .content-card {
+    padding: 0px;
+    padding-top: 80px;
+  }
+  .testimonials-item {
+    min-width: 100px;
+    scroll-snap-align: center;
+  }
+      .testimonials-avatar-box img {
+        width: 70px;
+        transform: translate(0px, 0px);
+      }
+  
+  .testimonials-item-title {
+    margin-bottom: 10px;
+    font-size: var(--fs-0);
+    margin-left:100px;
+  }
+  
+  .testimonials-text {
+    font-size: var(--fs-0);
+    margin-left:100px;
+  }
   /**
    * #PORTFOLIO, BLOG 
    */
 
   .project-img,
   .blog-banner-box { height: auto; }
+
+  .modal-title {
+    margin-left: 100px;
+    transform:translate(0px, -65px);
+  }
+}
 
 }
 
@@ -1270,7 +1303,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 580px screen
  */
 
-@media (min-width: 400px) {
+@media (min-width: 580px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1280,17 +1313,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
     /**
      * typography
-     */
-
-    --fs-1: 32px;
-    --fs-2: 24px;
-    --fs-3: 26px;
-    --fs-4: 18px;
-    --fs-6: 15px;
-    --fs-7: 15px;
-    --fs-8: 12px;
-
-  }
+     */--fs-1: 32px;--fs-2: 24px;--fs-3: 26px;--fs-4: 18px;--fs-6: 15px;--fs-7: 15px;--fs-8: 12px;}
 
 
 
@@ -1347,7 +1370,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box {border-radius: 18px;}
 
   .avatar-box img { width: 120px; }
 
@@ -1418,7 +1441,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials */
 
-  .testimonials-title {/* margin-bottom: 25px; */}
+   .testimonials-item {
+    min-width: calc(80% - 15px);
+    scroll-snap-align: center;
+  }
 
   .testimonials-list {
     gap: 30px;
@@ -1426,7 +1452,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
     padding-bottom: 35px;
   }
-
+  
+  .testimonials-text {
+        font-size: var(--fs-8);
+        margin-left: 110px;
+    }
   .content-card {
     padding: 30px;
     padding-top: 25px;
@@ -1436,9 +1466,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 14px;
   }
 
-  .testimonials-avatar-box img { width: 110px; }
+  .testimonials-avatar-box img { 
+    width: 90px;
+    transform: translate(10px,0px); 
+  }
 
   .testimonials-item-title {
+    font-size: var(--fs-5);
     margin-bottom: 10px;
     margin-left: 110px;
   }
@@ -1477,6 +1511,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .modal-avatar-box img { width: 110px; }
+
+  .modal-title {
+        margin-left: 0px;
+        transform: translate(0px, 0px);
+  }
 
   .modal-img-wrapper > img {
     display: block;
@@ -1596,7 +1635,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * ABOUT
    */
-
+  .testimonials-item {
+        min-width: calc(60% - 15px);
+        scroll-snap-align: center;
+    }
+  
+     .testimonials-text {
+        font-size: var(--fs-7);
+        margin-left: 110px;
+    }
   /* testimonials modal */
 
   .testimonials-modal {
@@ -1605,6 +1652,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .modal-avatar-box img { width: 110px; }
+  
+  .modal-title {
+        margin-left: 0px;
+        transform: translate(0px, 0px);
+  }
 
 
 
@@ -1745,8 +1797,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials */
 
-  .testimonials-item { min-width: calc(50% - 15px); }
+  .testimonials-item {min-width: calc(50% - 15px);}
+  
+  .testimonials-item-title {
+    font-size: var(--fs-4);
+    margin-bottom: 10px;
+    margin-left: 110px;
+  }
 
+   .testimonials-text {
+        font-size: var(--fs-6);
+        margin-left: 110px;
+    }
+
+  
   /* clients */
 
   .clients-item { min-width: calc(25% - 38px); }
@@ -1830,7 +1894,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
-
+    .testimonials-text {
+        font-size: var(--fs-5);
+        margin-left: 110px;
+    }
 
   /**
    * SIDEBAR
