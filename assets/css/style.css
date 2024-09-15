@@ -335,7 +335,7 @@ main {
 .avatar-box {
   position: relative;
   overflow: hidden;
-  background: var(--bg-gradient-onyx);
+  background: var(--bg-gradient-onyx); 
   border-radius: 20px;
 }
 
@@ -573,7 +573,7 @@ main {
 
 .testimonials { margin-bottom: 30px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.testimonials-title { /*margin-bottom: 20px;*/ }
 
 .testimonials-list {
   display: flex;
@@ -596,12 +596,11 @@ main {
 
 .testimonials-avatar-box {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(10px, 10px);
-  background: var(--bg-gradient-onyx);
+  top: 50%; 
+  left: 10px;
+  transform: translate(10px, -50%);
   border-radius: 14px;
-  box-shadow: var(--shadow-1);
+  /*box-shadow: var(--shadow-1);*/
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
@@ -707,11 +706,10 @@ main {
 .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .modal-avatar-box {
-  background: var(--bg-gradient-onyx);
-  width: max-content;
+ /* background: var(--bg-gradient-onyx); */
   border-radius: 14px;
   margin-bottom: 15px;
-  box-shadow: var(--shadow-2);
+/*  box-shadow: var(--shadow-2); */
 }
 
 .modal-img-wrapper > img { display: none; }
@@ -1420,7 +1418,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials */
 
-  .testimonials-title { margin-bottom: 25px; }
+  .testimonials-title {/* margin-bottom: 25px; */}
 
   .testimonials-list {
     gap: 30px;
@@ -1438,7 +1436,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 14px;
   }
 
-  .testimonials-avatar-box img { width: 120px; }
+  .testimonials-avatar-box img { width: 110px; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
@@ -1471,11 +1469,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .modal-avatar-box {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
     border-radius: 18px;
     margin-bottom: 0;
   }
 
-  .modal-avatar-box img { width: 65px; }
+  .modal-avatar-box img { width: 110px; }
 
   .modal-img-wrapper > img {
     display: block;
