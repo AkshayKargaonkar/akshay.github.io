@@ -1076,9 +1076,24 @@ main {
   overflow: hidden;
 }
 
+.blog-banner-box-vertical {
+  height: 100%;
+  width: 449px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
 .blog-banner-box img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: var(--transition-1);
+}
+
+.blog-banner-box-vertical img {
+  height 100%;
+  width: 100%;
   object-fit: cover;
   transition: var(--transition-1);
 }
