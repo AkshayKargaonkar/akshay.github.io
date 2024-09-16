@@ -1805,6 +1805,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 0 20px;
     padding: 0 20px;
     box-shadow: none;
+    transform: translateX(0px);
   }
 
   .navbar-list {
