@@ -1287,10 +1287,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
-  .modal-title {
-    margin-left: 100px;
-    transform:translate(0px, -65px);
-  }
+
 }
 
 }
