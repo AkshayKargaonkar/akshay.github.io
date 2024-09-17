@@ -1040,6 +1040,9 @@ main {
     justify-content: space-between; /* To add space between the images */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+.project-gallery-img {
+    margin: 10px; /* Optional, to add some space around each image */
+}
 
 
 
