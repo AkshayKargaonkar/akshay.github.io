@@ -1037,11 +1037,13 @@ main {
 
 .project-gallery {
     display: flex;
-    justify-content: space-between; /* To add space between the images */
+    justify-content: space-evenly; /* To add space between the images */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 .project-gallery-img {
     margin: 10px; /* Optional, to add some space around each image */
+    min-height: 60px;
+    align-content: center;
 }
 
 
