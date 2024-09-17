@@ -1011,7 +1011,7 @@ main {
 
 .project-img img {
   width: 100%;
-  height: 100%;
+  height: 170px;
   object-fit: cover;
   transition: var(--transition-1);
 }
@@ -1307,7 +1307,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #PORTFOLIO, BLOG 
    */
-
+.project-img img {
+	height:200px; 
+		}
   .project-img,
   .blog-banner-box { height: auto; }
 
@@ -1588,7 +1590,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-content { padding: 25px; }
 
-
+.project-img img {
+	height:200px; 
+		}
 
   /**
    * #CONTACT
@@ -1739,6 +1743,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-list, .blog-posts-list {
     grid-template-columns: 1fr 1fr; }
 
+  .project-img img {
+  height:320px; 
+		}
+
+
 
 
   /**
@@ -1882,7 +1891,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
-
+  .project-img img {
+  height:160px; 
+		}
 .blog-posts-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
