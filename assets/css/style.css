@@ -1035,7 +1035,11 @@ main {
   font-weight: var(--fw-300);
 }
 
-
+.project-gallery {
+    display: flex;
+    justify-content: space-between; /* To add space between the images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
 
 
 
