@@ -514,7 +514,10 @@ main {
   line-height: 1.6;
 }
 
-.about-text p { margin-bottom: 15px; }
+.about-text p {
+margin-top: 15px;
+margin-bottom: 15px; 
+}
 
 
 
