@@ -1074,7 +1074,6 @@ margin-bottom: 15px;
 .test-gallery img,
 .test-gallery video {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
